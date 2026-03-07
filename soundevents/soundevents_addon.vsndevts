@@ -1,50 +1,42 @@
 <!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
 {
 
-// For soundevents to compile into the addon, this file must be kept named as soundevents_addon.vsndevts and all new soundevents should be added to this file. 
+	"ambient_example.indoors.a" = 
+	{
+		base = "amb.looping.atXYZ.base"
+		volume = 0.5
+		position = [ 1136.0, 1392.0, 64.0 ]
+		vsnd_files_track_01 = ".vsnd"
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				500.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+	}
 
-// A soundevent in CS2 is a container that can host a combination of sound parameters, vsnds (.wavs), and other soundevents. Soundevents can be used to trigger other soundevents and therefore small hierarchies can be created if needed. For most ambient sounds in CS2, we use soundevents in small hierarchical structures (parent/child/grandchildren) for each area in a map.
+	"ambient_example.outdoors.birds" = 
+	{
+		base = "amb.intermittent.atXYZ.base"
+		volume = 0.5
+		retrigger_interval_min = 1.0
+		retrigger_interval_max = 6.0
+		position = [ 1264.0, -491.0, 64.0 ]
+		vsnd_files_track_01 = 
+		[
+			"sounds/bird_01.vsnd",
+			"sounds/bird_02.vsnd",
+			"sounds/bird_03.vsnd",
+			"sounds/bird_04.vsnd",
+			"sounds/bird_05.vsnd",
+			"sounds/bird_06.vsnd",
+		]
 
-// Soundevents can now reference a "base" soundevent which is essentially any soundevent you wish to act as a template. 
-// Below we have added some commonly used base soundevents which are defined in more detail at the end of this file. You can overwrite any property from a base event simply by re-adding the property to your own soundevent and giving it a new value. 
-// "amb.soundscapeParent.base" - use this as the main soundevent that triggers all sounds within a particular soundscape. This event also sets the reverb/dsp for the area. This soundevent's name needs to be placed in the soundevent property of the env_soundscape entity in hammer. Do not assign any .vsnd files to a parent event. 
-// "amb.looping.atXYZ.base" - loop a 3d sound at point in the world. Use 'getpos' in the dev console to obtain coordinates at the position of the camera.Markers have to be embedded in the wav file for a sound to loop.
-// "amb.looping.stereo.base" - loop a simple stereo background sound. Markers have to be embedded in the wav file for a sound to loop.
-// "amb.intermittent.randomAroundPlayer.base" - one shot sounds that play every so often at a random location around the player. eg. airplanes, rockfalls.
-// "amb.intermittent.atXYZ.base" - one shot sounds that play every so often at a specific location. 
-
-// Helpful convars and tips:
-// New to CS2: It's highly recommended that you use the env_soundscape entity radius property to fill up an entire space, rather than use soundscapes as on/off switches at choke points to an area. This is required so that all gameplay sfx recieve appropriate reveb based on the location of their emission, regardless of where the player is listening from.
-// soundscape_debug 1 : shows env_soundscape entity placement and LOS during runtime.
-// server_snd_cast Weapon_AK47.Single 1 : places a  repeating soundevent at the location of the crosshair during runtime repeating every 1 sec. This is useful for testing 3d sound, occlusion and sound location based reverb (as opposed to traditional listener based reverb). To stop, type server_snd_cast
-// To hear ambient soundevent changes while a map is running, simply leave the soundscape area and re-enter.
-// Use the Sounds debugger in the VConcsole to see a list of currently playing vsnds and a log of previously played soundevents with associated data. The button on the right above "Filter Audio"  will allow you to see the location of emitting sound.
-
-// reverb/dsp presets:
-//reverb_2_crawlSpace
-//reverb_3_smallTunnels
-//reverb_4_smallCarpetRoom
-//reverb_5_smallRoom
-//reverb_6_largeRoom
-//reverb_7_mediumHall
-//reverb_8_mediumCarpetRoom
-//reverb_9_mediumChamber
-//reverb_10_warehouse
-//reverb_11_smallBright9
-//reverb_12_mediumBright
-//reverb_13_largeBright
-//reverb_14_brightHallway
-//reverb_15_largeCarpetRoom
-//reverb_16_carpetCorridor
-//reverb_17_smallConcrete
-//reverb_18_mediumConcrete
-//reverb_19_largeConcrete
-//reverb_20_outsideAlley
-//reverb_21_outsideStreet
-//reverb_22_outsideOpen
-//reverb_23_smallBathroom
-//reverb_24_largeBathroom
- 
 	"ambient_example.outdoors" = 
 	{
 		base = "amb.soundscapeParent.base"
