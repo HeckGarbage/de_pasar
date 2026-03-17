@@ -1,0 +1,30 @@
+V.363597 -- Releases in today night/tomorrow
+
+[Bug Fixes - Terrain]
+- Fixed a soft lock bug in Office if you crouch in the left part, while also fixing height displacement.
+- Fixed texture clipping bug in Sewers.
+- Fixed a problem where the footsteps of players in Sewers being unreasonably loud. Water is removed temporarily while the problem is on hold.
+- Fixed a problem where ladder brushes overcovered or vice versa in Sewers.
+- Removed potential blockage objects near Sewers.
+- Removed present static objects that are floating and blocking in Sewers.
+- Adjusted some clip brushes to not block normal gameplay.
+- Fixed a problem where the poster in T Main is acting as a solid and boost-able object, despite being insignificant.
+- Fixed some props being able to allow players to gain significant, unfair terrain advantages.
+
+[Gameplay Balances - Terrorist]
+- Terrorist (so as CT) can now jump up on the awning on Long.
+- Adjusted props in the left room on Long.
+- Closed most of the feet gaps on Long.
+- Added props as cover for terrorist in Mid.
+- Covers on Second Mid now have fewer gaps.
+- Grenades can now pass through the ledges of the OOB Geometry bridge on T Main.
+- The wall at the exit of Office is now higher.
+
+[Gameplay Balances - CT]
+- Shorten the second fence that acts as a cover on Back of Mid.
+- Added some covers to defend the Bombsite.
+- Deleted a controversial stuffed elephant.
+- The awning below stairs now cover the whole surface of the area below it.
+
+[General]
+- Compiled the map to 8K resolution.

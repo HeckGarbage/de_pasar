@@ -5,12 +5,18 @@
         [
         panorama:"file://{images}/map_icons/screenshots/1080p/de_pasar.png",
 	panorama:"file://{images}/map_icons/screenshots/1080p/de_pasar_1.png",
-        panorama:"file://{images}/map_icons/screenshots/1080p/de_pasar_2.png",
+        panorama:"file://{images}/map_icons/screenshots/1080p/de_pasar_2.png"
+	panorama:"file://{images}/map_icons/screenshots/1080p/de_pasar_3.png"
+	panorama:"file://{images}/map_icons/screenshots/1080p/de_pasar_4.png",
 	panorama:"file://{images}/map_icons/screenshots/720p/de_pasar.png",
 	panorama:"file://{images}/map_icons/screenshots/720p/de_pasar_1.png",
         panorama:"file://{images}/map_icons/screenshots/720p/de_pasar_2.png",
+	panorama:"file://{images}/map_icons/screenshots/720p/de_pasar_3.png",
+	panorama:"file://{images}/map_icons/screenshots/720p/de_pasar_4.png",
 	panorama:"file://{images}/map_icons/screenshots/360p/de_pasar.png",
 	panorama:"file://{images}/map_icons/screenshots/360p/de_pasar_1.png",
         panorama:"file://{images}/map_icons/screenshots/360p/de_pasar_2.png",
+	panorama:"file://{images}/map_icons/screenshots/360p/de_pasar_3.png",
+	panorama:"file://{images}/map_icons/screenshots/360p/de_pasar_4.png",
         ]
 }
