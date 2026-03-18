@@ -1,0 +1,53 @@
+Update .400147
+
+[Visual]
+- Added visuals and details throughout the map.
+- Fixed a Vis problem outside (behind) CT Spawn.
+
+[Panorama]
+- Updated loading screen images.
+- Updated radar according to the changes.
+- Fixed the radar geometry.
+- Added location names under the radar.
+
+[Audio]
+- Fixed a case where the radio in T Spawn is unreliable to play music properly.
+
+[Map Parameters]
+- Increased the range and damage of the Bombsite.
+
+[Map]
+- Redesigned most of the ground meshes of the map to reduce texture overlapping or height displacement. 
+
+[T Spawn]
+- Increased buy zone range.
+- Relocated some possible spawns for Terrorist, in order to beat some timings over CTs.
+
+[Main]
+- Removed the window on the Bridge.
+
+[Mid]
+- Adjusted the newly added double crates to be slightly wallbang-able.
+- Fixed a problem where the window in Stairs is acting as a solid and boost-able object, despite being hard to do so.
+
+[Long]
+- Added a breakable sewer vent on Sewer exit.
+- Added props in assist on covering the Terrorists.
+
+[Sewers]
+- Fixed a problem where the ladder clip is too wide and causing players to fail climbing up the ladder.
+- Fixed a problem where the ladder is visually cut off despite being climbable.
+- Fixed some problems on the terrain in Sewers.
+- Fixed some clipping problems.
+
+[Connector]
+- Added a floodlight that casts dynamic shadows.
+
+[Second Mid]
+- Readjusted some covers.
+
+[Bombsite]
+- Readjusted some covers.
+
+[Control]
+- Readjusted some covers.
