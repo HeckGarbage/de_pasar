@@ -44,7 +44,25 @@
 //reverb_22_outsideOpen
 //reverb_23_smallBathroom
 //reverb_24_largeBathroom
-
+	
+	"koibankalarm" = 
+	{
+		base = "amb.looping.atXYZ.base"
+		volume = 1.0
+		position = [ 1136.0, 1392.0, 64.0 ]
+		vsnd_files_track_01 = "sounds/alarm.vsnd"
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				2500.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+	}
 	"de_museum.fountainsfx" = 
 	{
 		base = "amb.looping.atXYZ.base"
