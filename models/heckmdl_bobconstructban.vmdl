@@ -27,7 +27,13 @@
 				[
 					{
 						_class = "DefaultMaterialGroup"
-						remaps = [  ]
+						remaps = 
+						[
+							{
+								from = "materials/heckmdl_bobconstruct_ban.vmat"
+								to = "materials/bobconstruct_ban2.vmat"
+							},
+						]
 						use_global_default = false
 						global_default_material = ""
 					},
